@@ -1,16 +1,16 @@
 {
-  "name": "project-name",
+  "name": "slotlist",
   "version": "1.0.0",
-  "description": "Project description",
+  "description": "The Arma 3 slotslist of sTs.",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production && node-sass static/ -o dist/",
     "dev": "webpack --watch",
-    "test": "mocha --require @babel/register test/**/*.js"
+    "style": "node-sass -w static/ -o dist/ --output-style compressed"
   },
-  "author": "Author",
-  "license": "ISC",
+  "author": "Marvin Blum",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0",
     "vue": "^2.6.10",
