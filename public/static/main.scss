@@ -1,3 +1,71 @@
 html, body{
-	font-size: 20px;
+	font-size: 16px;
+	font-family: "Roboto Mono", sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 0 20px 0 20px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 2px 0 #000000;
+
+	.icon {
+		width: 48px;
+		height: 48px;
+		background-image: url("../static/logo.png");
+		background-size: cover;
+		margin: 0 10px 0 0;
+	}
+
+	input {
+		min-width: 300px;
+		border-width: 0 0 1px 0;
+		border-style: solid;
+		border-color: #c0c0c0;
+		background: none;
+		padding: 8px 8px 7px 8px;
+		margin: 0 10px 0 0;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	input:focus {
+		outline: none;
+		border: 1px solid #c0c0c0;
+		padding: 7px;
+	}
+
+	button {
+		margin: 10px;
+		font-size: 20px;
+	}
+}
+
+.end {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 12px;
+	padding: 4px;
+
+	a {
+		color: #000000;
+		text-decoration: underline;
+	}
+}
+
+.players {
+	min-width: 200px;
+	position: fixed;
+	top: 80px;
+	right: 0;
+	padding: 10px;
 }

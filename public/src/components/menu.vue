@@ -1,25 +1,31 @@
 <template>
 	<div class="menu">
-		<router-link to="/">Home</router-link>
-		<router-link to="/notfound">404</router-link>
+		<div class="icon"></div>
+		<input type="text" v-model="title" />
+		<button>{{$t("button_save")}}</button>
+		<button>{{$t("button_load")}}</button>
+		<button>{{$t("button_reset")}}</button>
+		<button>{{$t("button_login")}}</button>
 	</div>
 </template>
 
 <script>
 export default {
-	
+	data() {
+		return {
+			title: "Slotlist"
+		};
+	}
 }
 </script>
 
-<style lang="scss">
-.menu{
-	padding: 10px;
-	background: #000;
-	margin: 0 0 20px 0;
-
-	a{
-		color: #fff;
-		margin: 0 10px 0 0;
+<i18n>
+{
+	"en": {
+		"button_save": "Save",
+		"button_load": "Load",
+		"button_reset": "Reset",
+		"button_login": "Login"
 	}
 }
-</style>
+</i18n>

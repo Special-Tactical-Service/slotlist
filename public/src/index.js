@@ -4,7 +4,6 @@ import Vuex from "vuex";
 import VueI18n from "vue-i18n";
 import axios from "axios";
 
-import "../static/main.scss";
 import NewStore from "./store/store.js";
 import * as pages from "./pages";
 
@@ -38,7 +37,7 @@ axios.interceptors.request.use((config) => {
 
 // router
 const routes = [
-	{path: "/", component: pages.Home},
+	{path: "/", component: pages.Slotlist},
 	{path: "*", component: pages.Error404}
 ];
 
